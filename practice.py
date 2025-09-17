@@ -1,0 +1,1 @@
+print("Hello World! It`s first step for working with GIT")
