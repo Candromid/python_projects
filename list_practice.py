@@ -21,9 +21,8 @@ while -1 in books_ID:
 print(books_ID)
 
 """
-
-
-
+# задача на поиск сотрудников
+"""
 count_of_employees = int(input("Введите количество сотрудников: "))
 ID_of_employees = []
 flag = False
@@ -43,5 +42,28 @@ if flag:
     print("Сотрудник на месте!")
 else:
     print("Сотрудник с таким ID не работает в данной компании! ")
+    
+"""
+def num_list ():
+    number = int(input("Введите количество чисел в списке: "))
+    list_of_number = []
+    for i in range(number):
+        print(f"Введите {i + 1} число: ", end="")
+        digit = int(input())
+        list_of_number.append(digit)
+
+    return list_of_number
+
+def multiplicify (number):
+    list_of_number = num_list()
+    summ_of_index = 0
+    for i in range(len(list_of_number)):
+        if list_of_number[i] % number == 0:
+            print(f"Индекс числа {list_of_number[i]} = {i}")
+            summ_of_index += i
+    print("Сумма индексов: ", summ_of_index)
 
 
+
+
+multiplicify(10)
