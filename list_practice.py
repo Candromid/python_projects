@@ -2,7 +2,6 @@
 Здесь будут храниться все практические задачи связанные со списками ( list )
 '''
 
-
 """
 
 books_ID = [50, 34, -1, -1, 2, 23, -1]
@@ -74,6 +73,9 @@ def multiplicify (number):
 multiplicify(10)
 """
 
+# обращение по индексу к элементу списка
+
+"""
 dog_count = int(input("Введите количество собак в списке: "))
 dog_scores = []
 
@@ -98,3 +100,28 @@ for i_dogs in range(dog_count):
 
 dog_scores[min_index], dog_scores[max_index] = dog_scores[max_index], dog_scores[min_index]
 print("Итоговый списков очков у собак: ", dog_scores)
+"""
+
+# Генерация списка нечетных чисел от 1 до N
+"""def odd_num(number):
+    if number % 2 == 0:
+        number -= 1
+        return number
+    else:
+        return number
+
+num = int(input("Введите число N: "))
+num = odd_num(num)
+number_list = []
+for i in range(num):
+    if (i + 1) % 2 == 0:
+        continue
+    number_list.append(i + 1)
+
+print(number_list)"""
+
+
+
+
+
+
