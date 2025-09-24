@@ -120,8 +120,43 @@ for i in range(num):
 
 print(number_list)"""
 
+# Задача на список фильмов где пользователь может добавить из данного списка в свои Закладки для просмотра позже
+
+"""films = ["Крепкий орешек", "Назад в будущее", "Таксист", "Леон", "Богемская рапсодия", "Город грехов", "Мементо", "Отступники", "Деревня"]
+bookmark = []
+flag = False
+films_count = int(input("Сколько фильмов хотите добавить ? "))
+
+
+for _ in range(films_count):
+    film_name = input("Введите название фильма: ")
+    for i_film in range(len(films)):
+        if film_name == films[i_film]:
+            flag = True
+    if flag:
+        bookmark.append(film_name)
+    else:
+        print("Такого фильма нет в списке")
+
+    flag = False
+    
+print("ваш список сохраненных фильмов: ", bookmark)  
+    """
 
 
 
+#Задача "Контейнеры" (суть в том чтобы элемент вставить в определенное место по убыванию
 
+container_count = int(input("Введите количество контейнеров "))
+containers = []
 
+for _ in range(container_count):
+    container = int(input("Введите вес контейнера: "))
+    containers.append(container)
+
+x = int(input("Введите массу нового контейнера "))
+while x <= 200:
+    
+    break
+else:
+    print("некорректный ввод")
