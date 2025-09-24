@@ -44,6 +44,11 @@ else:
     print("Сотрудник с таким ID не работает в данной компании! ")
     
 """
+
+
+# задача на кратность
+
+"""
 def num_list ():
     number = int(input("Введите количество чисел в списке: "))
     list_of_number = []
@@ -67,3 +72,29 @@ def multiplicify (number):
 
 
 multiplicify(10)
+"""
+
+dog_count = int(input("Введите количество собак в списке: "))
+dog_scores = []
+
+for _ in range(dog_count):
+    print(f"Очков за сезон у {_ + 1} собаки: ", end='')
+    score = int(input())
+    dog_scores.append(score)
+
+print("Списков очков у собак: ", dog_scores)
+
+min_score = dog_scores[0]
+min_index = 0
+max_score = 0
+max_index = 0
+for i_dogs in range(dog_count):
+    if min_score > dog_scores[i_dogs]:
+        min_score = dog_scores[i_dogs]
+        min_index = i_dogs
+    if max_score < dog_scores[i_dogs]:
+        max_score = dog_scores[i_dogs]
+        max_index = i_dogs
+
+dog_scores[min_index], dog_scores[max_index] = dog_scores[max_index], dog_scores[min_index]
+print("Итоговый списков очков у собак: ", dog_scores)
