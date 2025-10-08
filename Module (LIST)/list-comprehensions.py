@@ -19,7 +19,7 @@ print(f"Список кубов чисел в диапазоне от {A_digit} 
 from operator import index
 
 """
-#Программа которая учитвая список текущих цен и вводится ежегодный процент увеличения , вывод новых увеличенных цен
+#Программа которая учитывая список текущих цен и вводится ежегодный процент увеличения , вывод новых увеличенных цен
 # функция которая принимает процент и саму цену, возвращает уже окончательную цену с прибавленным процентом к ней
 def get_higher_price(percent, price):
     return ((percent * price) / 100) + price
@@ -82,6 +82,15 @@ print("Урон второго отряда:", squad_2)
 print("Состояние третьего отряда:", squad_3_conditional)
 """
 
+
+import random
+original_prices = [random.randint(-50, 100) for _ in range(10)]
+
+boofer = [x if x > 0 else int(x == 0) for x in original_prices]
+
+print(sum(original_prices))
+print(sum(boofer))
+print("\nМы потеряли: ",  sum(original_prices) - sum(boofer))
 
 
 
