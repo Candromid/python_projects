@@ -1,3 +1,7 @@
+"""
+#Программа, создающая новую базу на основе выбора записей из имеющейся, критерии: айпи адреса
+# в диапазоне от 0 до 255 включительно, все имена файлов оканчиваются на txt, docx
+
 def validate_data(data):
     valid_extensions = {'txt', 'docx'}  # допустимые расширения файлов
 
@@ -31,3 +35,5 @@ filtered_data = validate_data(data)
 print("Корректные записи:")
 for item in filtered_data:
     print(item)
+"""
+
