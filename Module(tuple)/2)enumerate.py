@@ -58,7 +58,7 @@ text = input("Введите строку: ")
 some_list = [100, 200, 300, 'буква', 0, 2, 'а']
 some_dict = {0: 'д', 1: 'а', 2: 'а', 3: 'в', 4: 'т', 5: 'ж', 6: 'р', 7: 'б', 8: 'й', 9: 'р'}
 
-output = list_of_even_indices(text)
+output = list_of_even_indices(some_dict)
 
 print(output)
 
