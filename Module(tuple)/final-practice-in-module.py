@@ -49,6 +49,9 @@ print("Общая длина фамилий:", length)      # вывод сум�
 
 import random
 
-original_list = [random.randint(0, 10) for _ in range(10)]
+numbers = [random.randint(0, 100) for _ in range(10)]
+print("Оригинальный список:", numbers)
 
-new_list = []
+pairs = [(numbers[i], numbers[i+1]) for i in range(0, len(numbers), 2)]
+print("Новый список:", pairs)
+
