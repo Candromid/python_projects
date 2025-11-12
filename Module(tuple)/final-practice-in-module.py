@@ -47,11 +47,17 @@ print("Общая длина фамилий:", length)      # вывод сум�
 
 """
 
-import random
+"""import random
 
 numbers = [random.randint(0, 100) for _ in range(10)]
 print("Оригинальный список:", numbers)
 
 pairs = [(numbers[i], numbers[i+1]) for i in range(0, len(numbers), 2)]
 print("Новый список:", pairs)
+
+"""
+
+
+
+
 
